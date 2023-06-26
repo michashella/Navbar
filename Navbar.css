@@ -1,0 +1,33 @@
+body {
+  background-color: #555;
+  font-family: 'Caveat', 'Josefin Sans', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  background: #333;
+  text-align: right;
+}
+.navbar li {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px;
+}
+.navbar a {
+  color: white;
+  font-size: 30px;
+  text-shadow: 4px 2px #111
+}
+.navbar a::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid transparent;
+  transform: translateX(-100%);
+  transition: 0.5s;
+}
+.navbar a:hover::after {
+  border-bottom-color: white;
+  transform: translateX(0%);
+}
